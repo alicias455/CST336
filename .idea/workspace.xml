@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/img/IMG_4239_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/img/IMG_4239_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/img/IMG_4239_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/img/csumb_logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/img/csumb_logo_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/img/juan_doe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/portfolio/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/exmples/semanic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/exmples/flexbox.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/img/IMG_4239_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/img/IMG_4239_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/img/IMG_4239_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/img/IMG_4239_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/img/IMG_4239_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/img/IMG_4239_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/img/csumb_logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/img/csumb_logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/img/csumb_logo_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/img/csumb_logo_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/img/juan_doe.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/img/juan_doe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/portfolio/portfolio/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +43,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public" />
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\exmples" />
     </key>
   </component>
@@ -81,7 +79,8 @@
       <workItem from="1567703785046" duration="94000" />
       <workItem from="1567704114714" duration="281000" />
       <workItem from="1567704490064" duration="59000" />
-      <workItem from="1567704622692" duration="1293000" />
+      <workItem from="1567704622692" duration="2265000" />
+      <workItem from="1567711137623" duration="923000" />
     </task>
     <servers />
   </component>
