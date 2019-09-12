@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/project1/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/project1/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/project1/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/project1/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/project1/boot.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/project1/boot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/project1/direct.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/project1/direct.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/project1/resident.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/project1/resident.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +96,7 @@
       <workItem from="1568149831670" duration="125000" />
       <workItem from="1568149974279" duration="738000" />
       <workItem from="1568258540197" duration="3017000" />
-      <workItem from="1568262273805" duration="23893000" />
+      <workItem from="1568262273805" duration="24332000" />
     </task>
     <servers />
   </component>
