@@ -1,0 +1,91 @@
+body {
+    background-color: antiquewhite;
+    color: black;
+}
+
+header, nav, footer {
+    text-align: center;
+}
+ #virus{
+     text-align: center;
+ }
+
+.header{
+    background-color: antiquewhite;
+}
+
+#resident{
+    padding-left: 400px;
+}
+
+nav a {
+    padding:15px;
+    padding-bottom:5px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-bottom:2px darkblue solid;
+    color: darkblue;
+    font-size: 1.5em;
+    transition: .9s;
+}
+
+#someInfo{
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+#resident_virus {
+    float: left;
+}
+
+#someResidentInfo{
+    padding-left: 50px;
+    text-align: center;
+}
+
+#direct_virus, #someDirectInfo {
+    float: left;
+}
+
+#direct_virus{
+    padding-left: 100px;
+}
+
+#direct{
+    padding-left: 300px;
+}
+
+#someDirectInfo {
+    text-align: center;
+    padding-left: 150px;
+}
+
+#boot, #someBootInfo {
+    float: left;
+}
+
+#someBootInfo{
+    text-align: center;
+    padding-left: 150px;
+}
+
+#cited{
+    font-size: .8em;
+    color: gray;
+}
+
+footer{
+    clear: left;
+    font-size: .5em;
+    color: gray;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
