@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $("button").on("click", gradeQuiz);
+
+            function isFormValid() {
+                let isValid = true;
+                if ($("#q1").val() == ""){
+                    isValid = false;
+                    $("#validationFdbk").html("Question 1 was not answered");
+                }
+                return isValid;
+            }
+
+            function rightAnswer(index) {
+                $(`#q${index}Feedback`).html("Correct!");
+                $(`#q${index}Feedback`).attr("class", "bg-success text-white");
+                $(`#markImg${index}`).html("<img src='img/checkmark.png'>");
+                score += 20;
+            }
+
+            function gradeQuiz() {
+                $("#validationFdbk").html("");
+                if (!isFormValid()){
+                    return;
+                }
+
+                let score = 0;
+                let q1Response = $("#q1").val().toLowerCase();
+                let q2Response = $("#q2").val();
+
+                if (q1Response == "sacramento"){
+                    $("#q1Feedback").html("Correct!");
+                    $("#q1Feedback").attr("class", "bg-success text-white");
+                    $("#markImg1").html("<img src = 'img/checkmark.png' alt = 'checkmark'>");
+                    score += 20;
+                }
+                else{
+                    $("#q1Feedback").html("Incorrect!");
+                    $("#q1Feedback").attr("class", "bg-warning text-white");
+                    $("#markImg1").html("<img src = 'img/xmark.png' alt = 'xmark'>");
+                }
+
+                if (q2Response == "mo"){
+                    $("#q2Feedback").html("Correct!");
+                    $("#q2Feedback").attr("class", "bg-success text-white");
+                    $("#markImg2").html("<img src = 'img/checkmark.png' alt = 'checkmark'>");
+                    score += 20;
+                }
+                else{
+                    $("#q2Feedback").html("Incorrect!");
+                    $("#q2Feedback").attr("class", "bg-warning text-white");
+                    $("#markImg2").html("<img src = 'img/xmark.png' alt = 'xmark'>");
+                }
+
+                $("#totalScore").html(`Total Score: ${score}`);
+            }
+        }) //ready
+    </script>
+
+</head>
+<body class="text-center">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <h1 class="jumbotron">US Geography Quiz</h1>
+
+    <h3><span id="markImg1"></span> What is the capital of California?</h3>
+    <input type="text" id="q1">
+    <br><br>
+    <div id="q1Feedback"></div>
+    <br>
+
+    <h3><span id="markImg2"></span> What is the longest river?</h3>
+    <select id="q2">
+        <option value="">Select One</option>
+        <option value="ms">Mississippi</option>
+        <option value="mo">Missouri</option>
+        <option value="co">Colorado</option>
+        <option value="de">Delaware</option>
+    </select>
+    <br><br>
+    <div id="q2Feedback"></div>
+    <br>
+
+    <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+    <button class="btn btn-outline-success"> Submit Quiz </button>
+    <br>
+    <h2 id="totalScore" class="text-info"></h2>
+
+
+
+</body>
+</html>
