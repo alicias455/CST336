@@ -1,0 +1,44 @@
+body {
+    color: black;
+    text-align: center;
+    border-style: dotted;
+    border-color: black;
+}
+
+#sub{
+    margin-bottom: 10px;
+    border-style: ridge;
+    border-color: gray;
+}
+
+#signUpForm{
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.fname{
+    margin-bottom: 5px;
+}
+
+.lname{
+    margin-bottom: 5px;
+}
+
+.dname{
+    margin-bottom: 5px;
+}
+
+.pass{
+    margin-bottom: 5px;
+}
+
+.passA{
+    margin-bottom: 5px;
+}
+
+h2{
+    background-color: lightgray;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
