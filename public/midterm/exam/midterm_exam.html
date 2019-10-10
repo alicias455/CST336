@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Midterm Exam</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <iframe id="video" width="560" height="315" align="center" src="https://www.youtube.com/embed/ysVeiqqQhgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        .dislikes{
+            float: left;
+        }
+
+        .dislikes{
+            padding: 2px;
+        }
+
+        #comments{
+            text-align: center;
+            margin: 2px;
+        }
+
+        .Q{
+            display: none;
+        }
+
+        .rubricDiv{
+            display: none;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="w3-container">
+
+<button id="applyLikes"><input type="image" src="img/like_midterm.png" name="likes" class="likes" id="likes" /></button>
+<button id="applyDislikes"><input type="image" src="img/dislike_midterm.png" name="dislikes" class="dislikes" id="dislikes" /></button>
+
+<button id="comments" onclick="showC()">See Comments</button>
+<button id="aquestion" onclick="showQ()">Answer Question</button><br>
+
+<div id="Q" class="Q">
+    What was this video about?
+    <select id="question" name="question">
+        <option value="">Select Best Answer</option>
+        <option value="1">The life of the otters</option>
+        <option value="2" id="2">CSU Monterey Bay</option>
+        <option value="3">JavaScript programming</option>
+        <option value="4">The sun and the moon</option>
+    </select>
+</div>
+
+
+<button id="rubric" onclick="showR()">Show Rubric</button><br>
+<div id="rubricDiv" class="rubricDiv">
+    <table border="1" width="600" cellpadding="10px">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Task Description</th>
+            <th>Points</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr style="color:green">
+            <td>1</td>
+            <td>All elements are included (video and buttons)<br></td>
+            <td width="20" align="center">10</td>
+        </tr>
+        <tr style="color:red">
+            <td>2</td>
+            <td>Initial number of likes/dislikes is displayed from API when loading page<br></td>
+            <td width="20" align="center">10</td>
+        </tr>
+        <tr style="color:green">
+            <td>3</td>
+            <td>When clicking on any like/dislike button, it's hidden and the other blue/grayedout button is displayed <br></td>
+            <td width="20" align="center">10</td>
+        </tr>
+        <tr style="color:red">
+            <td>4</td>
+            <td>When clicking on any like/dislike button, the corresponding value is updated via an AJAX call <br></td>
+            <td width="20" align="center">20</td>
+        </tr>
+        <tr style="color:red">
+            <td>5</td>
+            <td>When clicking on "See Comments", author, date, and comment are displayed via AJAX in the following format: <br> <b>Author</b> <i>Date</i><br>Comment<br></td>
+            <td width="20" align="center">20</td>
+        </tr>
+        <tr style="color:red">
+            <td>6</td>
+            <td>When clicking on "See Comments", comments are in random order<br></td>
+            <td width="20" align="center">10</td>
+        </tr>
+        <tr style="color:red">
+            <td>7</td>
+            <td>When clicking on "See Comments", stars are displayed based on the RATING value<br></td>
+            <td width="20" align="center">10</td>
+        </tr>
+        <tr style="color:green">
+            <td>8</td>
+            <td>When clicking on "Answer Question" a dropdown question is displayed <br></td>
+            <td width="20" align="center">5</td>
+        </tr>
+        <tr style="color:red">
+            <td>9</td>
+            <td>When answering the question, color-coded feedback is displayed <br></td>
+            <td width="20" align="center">15</td>
+        </tr>
+        <tr style="color:green">
+            <td>10</td>
+            <td>Page has nice design: content is centered, all buttons right below the video <br></td>
+            <td width="20" align="center">10</td>
+        </tr>
+        <tr style="color:green">
+            <td>11</td>
+            <td>This rubric is properly included AND UPDATED</td>
+            <td width="20" align="center">3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>T O T A L </td>
+            <td width="20" align="center">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $("#likes").on("click", function () {
+        // console.log("likes?")
+        // alert($("#likes").val());
+        $.ajax({
+            method: "Get",
+            url: "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php?videoId=ysVeiqqQhgc",
+            dataType: "json",
+            data: {"likes": $("#likes").val()},
+            success: function (result, status) {
+                alert(result.likes)
+                $("#likes").html(result.likes);
+            }
+        });
+    });
+
+    $("#dislikes").on("click", function () {
+        $.ajax({
+            method: "Get",
+            url: "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php?videoId=ysVeiqqQhgc",
+            dataType: "json",
+            data: {"dislikes": $("#dislikes").val()},
+            success: function (result, status) {
+                alert(result.dislikes)
+                $("#dislikes").html(result.dislikes);
+            }
+        });
+    });
+
+    let seeImage = $("#likes")
+    let changeButton = $("#applyLikes")
+    changeButton.on('click', function(e) {
+        seeImage.attr('src', 'img/cancel-like_midterm.png')
+    });
+
+    let seeImage2 = $("#dislikes")
+    let changeButton2 = $("#applyDislikes")
+    changeButton2.on('click', function(e) {
+        seeImage2.attr('src', 'img/cancel-dislike_midterm.png')
+    });
+
+    function showQ() {
+            document.getElementById("Q").style.display = 'block';
+            }
+    function showR() {
+        document.getElementById("rubricDiv").style.display = 'block';
+    }
+
+    function showV() {
+        document.getElementById("rubricDiv").style.display = 'block';
+    }
+        // var res = document.getElementById("question");
+        // console.log("response")
+        //     if(res.value == "2"){
+        //         console.log("response?")
+        //         $(`#qFeedback`).html("Correct!");
+        //         $(`#qFeedback`).attr("class", "bg-success text-white");
+        //     }
+        //     else {
+        //         alert('select an answer')
+        //     }
+
+    // function showC() {
+    //     $.ajax({
+    //         method: "Get",
+    //         url: "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php?videoId=xyz&action=comments",
+    //         dataType: "json",
+    //         data: {"comment": $("#comments").val()},
+    //         success: function (result, status) {
+    //             alert(result.comment)
+    //             // console.log("comments?");
+    //             $("#comments").html(result.comment);
+    //       }
+    //     });
+    // }
+
+
+    // $("#applyLikes").on("click", function(){
+    //     $("#applyLikes").css("background", "");
+    //     $(this).css("background", "rgb(255, 255, 0)");
+    // });
+
+</script>
+
+</body>
+</html>
