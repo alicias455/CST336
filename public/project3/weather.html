@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+<h1><em><ins>Weather</ins></em></h1>
+    <form>
+        Zip Code: <input type="text" name="zip" id="zip">
+                  <span id="zipError"></span><br>
+        Country Code: <input type="text" name="country" id="country"><br>
+        Temperature: <span id="temp"></span><br>
+    </form>
+
+    <script>
+        $("#zip").on("change", function() {
+            alert($("#zip").val());
+            $.ajax({
+                method: "Get",
+                url: "https://api.openweathermap.org/data/2.5/weather?&appid=0b83b9540726affc6a41859cee315ed9",
+                dataType: "json",
+                data: {"zip code": $("#zip").val(), "country code": $("#county".val())},
+                success: function (result, status) {
+                    // console.log(result);
+                    // alert(result.city);
+                    $("#temp").html(result.temp);
+                    // console.log("where is zip")
+                    if (result) {
+                        // console.log("zip valid?")
+                        $("#zipError").html("Zip valid.");
+                        $("#zipError").css("color", "green");
+                    } else {
+                        // console.log("zip not valid")
+                        $("#zipError").html("Zip not valid.");
+                        $("#zipError").css("color", "red");
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
