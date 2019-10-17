@@ -45,14 +45,14 @@
         var usernameAvailable = false;
 
         $("#zip").on("change", function(){
-            alert($("#zip").val());
+            //alert($("#zip").val());
             $.ajax({
                 method: "Get",
                 url: "https://cst336.herokuapp.com/projects/api/cityInfoAPI.php",
                 dataType: "json",
                 data: { "zip": $("#zip").val()},
                 success: function (result, status) {
-                    // console.log(result);
+                    console.log(result);
                     // alert(result.city);
                     $("#city").html(result.city);
                     $("#latitude").html(result.latitude);

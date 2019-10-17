@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    border-style: double;
+    border-color: black;
+    padding: 10px;
+}
+
+#zip, #country, #temp{
+    margin: 2px;
+    font-family: Georgia;
+}
+
+h1{
+    color: cornflowerblue;
+    font-family: 'Pacifico', cursive;
+    background-color: aliceblue;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#box{
+    background-color: lightsteelblue;
+    font-family: Georgia;
+    padding: 10px;
+}

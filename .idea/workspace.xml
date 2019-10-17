@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/lab6/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/midterm/exam.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/project3/weather.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/project3/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lab4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/project3/weather.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/project3/weather.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -114,7 +112,7 @@
       <workItem from="1570681556658" duration="12892000" />
       <workItem from="1570733656859" duration="13832000" />
       <workItem from="1571167199968" duration="5268000" />
-      <workItem from="1571333458302" duration="1181000" />
+      <workItem from="1571333458302" duration="4146000" />
     </task>
     <servers />
   </component>
