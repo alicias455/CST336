@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
 
-app
+app.get("/", function(req, res){
+    res.render("index.html");
+});
 
-app.get("/", function (requ, res) {
+app.get("/", function (req, res) {
     res.send("it works!");
 });
 
