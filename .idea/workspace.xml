@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/examples/ex_/ex1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/ex_/ex2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/ex_/includes/newable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/ex_/includes/object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/ex_/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/ex_/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/node/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/public/img/earth.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/public/img/mercury_orbit.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/public/img/solar_system.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/public/img/venus.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/views/earth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/views/mercury.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/views/partials/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/views/partials/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab6/views/venus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/lab6/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab6/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,17 +50,17 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\midterm\exam\img" />
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\midterm\exam" />
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\midterm\img" />
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\midterm\practice\css" />
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\lab3\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\project1\img" />
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336" />
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\exmples\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\lab6\public\img" />
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\lab6\views" />
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\midterm\exam\img" />
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\midterm\exam" />
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\midterm\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -119,7 +121,10 @@
       <workItem from="1570681556658" duration="12892000" />
       <workItem from="1570733656859" duration="13832000" />
       <workItem from="1571167199968" duration="5268000" />
-      <workItem from="1571333458302" duration="9615000" />
+      <workItem from="1571333458302" duration="10211000" />
+      <workItem from="1571347062160" duration="1041000" />
+      <workItem from="1571771153663" duration="8877000" />
+      <workItem from="1571782246665" duration="2502000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,52 @@
+body{
+    background-color: #CBE2F6;
+    text-align: center;
+}
+
+#mercBody{
+    background-color: antiquewhite;
+}
+
+#mercInfo{
+    text-align: center;
+    padding: 10px;
+}
+
+#mercury_orbit{
+    float: left;
+    padding: 10px;
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+#venBody{
+    background-color: antiquewhite;
+}
+
+#venus{
+    float: right;
+    padding: 10px;
+}
+
+#venInfo{
+    padding: 10px;
+}
+
+nav a {
+    padding:15px;
+    padding-bottom:5px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-bottom:2px black solid;
+    font-size: 1.5em;
+    transition: .9s;
+}
