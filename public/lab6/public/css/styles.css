@@ -9,12 +9,11 @@ body{
 
 #mercInfo{
     text-align: center;
-    padding: 10px;
 }
 
 #mercury_orbit{
     float: left;
-    padding: 10px;
+    margin-left: 80px;
 }
 
 .clearfix:after{
