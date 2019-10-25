@@ -35,3 +35,8 @@ app.get("/", function (req, res) {
 app.listen("8081", "0.0.0.0", function () {
     console.log("Express Server is Running...")
 });
+
+//heroku
+app.listen(process.env.PORT, process.env.IP, function () {
+    console.log("Running Express Server...");
+});

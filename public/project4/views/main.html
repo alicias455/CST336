@@ -1,0 +1,64 @@
+
+<header>
+    <figure id="virus">
+        <img alt="Virus image" src="img/virus2_main4.jpg" />
+    </figure>
+</header>
+
+<% include partials/header.ejs %>
+
+<main>
+    <div id="someInfo">
+        <br />
+
+        Hello! <br />
+
+        <p>
+            There are many types of viruses that have developed as technology has developed. The one recognized as the
+            first was called Creeper. Written by Bob Thomas in 1971, it spread through DEC PDP-10 computers on ARPAnet
+            and would display the message "I'm the creeper, catch me if you can!" Yet, the first virus detected in the wild
+            was written in 1982 by a 15-year-old in Pittsburgh, Rich Skrenta. It was a boot sector virus called Elk
+            Cloner designed to infect Apply II computers. However, the first PC virus to be found in the wild was Brain,
+            it was created in Pakistan in 1986.
+        </p>
+
+
+        <p>Given some history about how viruses began, this site provides information on three specific types:</p>
+
+        <p><mark>Resident Virus:</mark> <br />
+            is a virus that will <ins>install</ins> itself on a computer allowing it to spread even <br />
+            when the original "infected" file has been removed.
+        </p>
+
+        <p><mark>Direct Action Virus:</mark> <br />
+            is a virus that will attached itself to a <ins>specific type of file</ins>. When the <br />
+            file is used, it comes to life and begins searching for similar files to spread to.
+        </p>
+
+        <p><mark>Boot Sector Virus:</mark> <br />
+            is a virus that infects the <ins>master boot record</ins>. It usually spreads by removable media like USB drives <br />
+            and email attachments.
+        </p>
+
+        <p></p>
+
+        <br />
+        <br />
+
+    </div>
+
+    <div id="cited">
+            Information was taken from:
+        <ul style="list-style-type:circle;">
+            <li>https://gcn.com/blogs/tech-trivia/2011/08/first-computer-virus.aspx</li>
+            <li>https://www.makeuseof.com/tag/types-computer-viruses-watch/</li>
+            <li>https://www.spamlaws.com/direct-action-virus.html</li>
+            <li>https://usa.kaspersky.com/resource-center/definitions/boot-sector-virus</li>
+        </ul>
+
+
+    </div>
+
+</main>
+
+<% include partials/footer %>

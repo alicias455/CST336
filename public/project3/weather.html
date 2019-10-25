@@ -26,13 +26,13 @@
         $("#zip").on("change", function() {
             alert($("#zip").val());
             $.ajax({
-                method: "Get",
+                method: "GET",
                 url: "https://api.openweathermap.org/data/2.5/weather?&appid=0b83b9540726affc6a41859cee315ed9",
                 dataType: "json",
                 data: {"zip": $("#zip").val()},
                 success: function (result, status) {
                     console.log(result);
-                    alert(result.temp);
+                    alert(result.main.temp);
                     $("#temp").html(result.temp);
                     $("#des").html(result.description);
                     $("#hum").html(result.humidity);

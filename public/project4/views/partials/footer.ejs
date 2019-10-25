@@ -1,0 +1,28 @@
+<footer>
+    <hr>
+    CST336 Internet Programming. 2019&copy; Sandoval <br />
+    <strong>Disclaimer:</strong> The information on this page is strictly for academic purpose <br />
+    and may not be entirely accurate.
+
+    <figure>
+        <img alt="Picture of CSUMB logo" src="img/csumb_logo_2.jpg" />
+    </figure>
+</footer>
+
+
+<button id="surprise">Wanna hear a joke?</button>
+
+<div id="joke">
+    <%=joke%>
+</div>
+
+<script>
+    document.getElementById("joke").style.display = "none";
+
+    document.getElementById("surprise").addEventListener("click", function () {
+        document.getElementById("joke").style.display = "block";
+    })
+</script>
+
+</body>
+</html>
