@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lab 5: Pixabay Search</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+
+            //$("#searchBtn").on("click", function(){ search();console.log("it works")  })
+            $("#searchBtn").on("click", search);
+
+            $("#keyword").val("WHALES");
+            search();
+
+
+            function search(){
+                $.ajax({
+
+                    method: "GET",
+                    url: "https://pixabay.com/api/",
+                    dataType: "json",
+                    data: { "key":"5589438-47a0bca778bf23fc2e8c5bf3e",
+                        "q": $("#keyword").val(),
+                        "orientation":"vertical" },
+                    success: function(result,status) {
+
+                        result.hits = _.shuffle(result.hits); //shuffles all elements in an array
+
+                        //alert(result.hits[0].webformatURL);
+                            $("#images").html(`<img src='${result.hits[0].webformatURL}' width='120'>
+                                    <br>Likes: ${result.hits[0].likes}`);
+
+                    }
+
+                });//ajax
+            }//search()
+
+
+
+        });//document.ready
+
+
+    </script>
+
+</head>
+<body>
+
+<h1> Pixabay Image Search </h1>
+
+Keyword: <input id="keyword" type="text"> <button id="searchBtn">Search!</button>
+<br><br>
+<div id="images">
+</div>
+
+</body>
+</html>
