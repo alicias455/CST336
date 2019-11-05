@@ -6,11 +6,18 @@
         .column{
             float: left;
             padding: 5px;
+            margin-left: 60px;
         }
         .row::after{
             content: "";
             clear: both;
             display: table;
+        }
+        body{
+            text-align: center;
+        }
+        h1{
+            font-family: "Curlz MT";
         }
     </style>
 </head>
@@ -29,7 +36,6 @@
 </form>
 <br>
 
-Display images here: <br>
 <div class="row">
     <div class="column">
         <% randomIndex = Math.floor(Math.random() * images.hits.length); %>
