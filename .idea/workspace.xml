@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lab5/pixbay_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab5/pixbay_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lab7/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab7/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lab7/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab7/views/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/lab7/views/results.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab7/views/results.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +118,7 @@
       <workItem from="1572086521614" duration="711000" />
       <workItem from="1572386034916" duration="728000" />
       <workItem from="1572545087125" duration="14795000" />
-      <workItem from="1572981005241" duration="13518000" />
+      <workItem from="1572981005241" duration="13800000" />
     </task>
     <servers />
   </component>
