@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="" />
+    <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/lab7/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab7/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab7/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab7/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab7/views/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/lab7/views/results.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,26 +39,26 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/lab7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab7" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="Download Node.js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\examples" />
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\project4\view" />
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\lab6\public\img" />
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\lab6\views" />
-      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\midterm\exam\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\lab7" />
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\project4\public\img" />
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\project4\public\css" />
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\project4\view\partials" />
       <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\project1\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\lab7" />
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\examples" />
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\project4\view" />
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\lab6\public\img" />
+      <recent name="C:\Users\asand_t4\WebstormProjects\CST336\public\lab6\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -119,7 +129,7 @@
       <workItem from="1572386034916" duration="728000" />
       <workItem from="1572545087125" duration="14795000" />
       <workItem from="1572981005241" duration="13800000" />
-      <workItem from="1572996846306" duration="359000" />
+      <workItem from="1572996846306" duration="2175000" />
     </task>
     <servers />
   </component>
