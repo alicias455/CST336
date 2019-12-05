@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>US Quiz (Express)</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="text-center">
+
+  <h1 class="jumbotron"> US Geography Quiz <br> Express Version </h1>
+
+	<!-- Step 1: wrap all inputs in a form -->
+	<form method="post" action="/" enctype="application/x-www-form-urlencoded">
+
+		<h3><span id="markImg1"></span> What is the capital of California?</h3>
+
+		<!-- Step 2: Make sure all inputs have a name attribute -->
+		<input type="text" id="q1" name="q1" value=<%= original.q1%>>
+
+		<br><br>
+
+		<div id="q1Feedback">
+			<!-- Step 8: populate answer related info -->
+			<%= answers.q1%>
+		</div>
+		<br>
+
+
+		<h3><span id="markImg2"></span>What is the longest river?</h3>
+		<select id="q2" name="q2">
+			<!-- Step 7: populate original values -->
+			<option value="" <%= original.q2 === '' ? 'selected' : '' %>>Select One</option>
+			<option value="ms" <%= original.q2 === 'ms' ? 'selected' : '' %>>Mississippi</option>
+			<option value="mo" <%= original.q2 === 'mo' ? 'selected' : '' %>>Missouri</option>
+			<option value="co" <%= original.q2 === 'co' ? 'selected' : '' %>>Colorado</option>
+			<option value="de" <%= original.q2 === 'de' ? 'selected' : '' %>>Delaware</option>
+		</select>
+		<br><br>
+		<div id="q2Feedback"></div>
+		<br>
+
+		<h3><span id="markImg3"></span>What presidents are carved into mount Rushmore?</h3>
+		<input type="checkbox" id="Jackson">   <label for="Jackson"> A. Jackson    </label>
+		<input type="checkbox" id="Franklin">  <label for="Franklin">B. Franklin  </label>
+		<input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson</label>
+		<input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt</label>
+		<br><br>
+		<div id="q3Feedback"></div>
+		<br>
+
+		<h3><span id="markImg4"></span>What is the smallest US state?</h3>
+		<div id="choices"> </div>
+		<br><br>
+		<div id="q4Feedback"></div>
+		<br>
+
+		<h3><span id="markImg5"></span>Which is the correct seal of California?</h3>
+		<img src="/img/seal1.png" alt= "seal1" class="q5choice" id="seal1">
+		<img src="/img/seal2.png" alt= "seal2" class="q5choice" id="seal2">
+		<img src="/img/seal3.png" alt= "seal3" class="q5choice" id="seal3">
+
+		<br><br>
+		<div id="q5Feedback"></div>
+		<br>
+
+		<button class="btn btn-outline-success submit"> Submit Quiz </button>
+	</form>
+
+    <br><br>
+
+    <h2 id="totalScore" class="text-info"></h2>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+     <script>
+		$(document).ready(function(){
+
+			// Step 3. Add submit handler
+			$("form button.submit").on("click touchstart", function(e) {
+				// Cancel submission with preventDefault()
+				e.preventDefault();
+
+				// TODO: validations go here
+
+				// Now submit if everything is okay
+				$("form").submit();
+			});
+
+			//Event Listeners
+			$(".q5choice").on("click", function(){
+				$(".q5choice").css("background-color",""); //resets background color
+				$(this).css("background-color","rgb(255, 255, 0)");
+			});
+
+       })//ready
+     </script>
+
+</body>
+</html>
+

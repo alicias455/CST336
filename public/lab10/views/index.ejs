@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 10</title>
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Proxima+Nova" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Date of Death</th>
+        <th><button onclick="window.location.href='/new'">New Author</button></th>
+    </tr>
+    <tr class="bordered">
+        <td><br><hr><br></td>
+        <td><br><hr><br></td>
+        <td><br><hr><br></td>
+        <td><br><hr><br></td>
+        <td><br><hr><br></td>
+        <td><br><hr><br></td>
+        <td><br><hr><br></td>
+    </tr>
+    <% authors.forEach(function(author) { %>
+        <tr>
+            <td><%= author.id %></td>
+            <td><%= author.first_name %></td>
+            <td><%= author.last_name %></td>
+            <td><%= author.dob %></td>
+            <td><%= author.dod %></td>
+            <td><button onclick="window.location.href='/edit'">Edit</button></td>
+            <td><button onclick="onDelete('<%= author.first_name %>', '<%= author.last_name %>')">Delete</button></td>
+        </tr>
+    <% }); %>
+
+</table>
+
+
+</body>
+<script>
+    const mysql = require('mysql');
+    function onDelete(first, last){
+        if (confirm("Are you sure you want to delete the author " + first + " " + last + "? This cannot be undone.")) {
+            const connection = mysql.createConnection({
+                host: 'er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+                user: 'jqu8aralz7x2d3f8',
+                password: 'j33452dd1h4o9zil',
+                database: 'upz1sirhhzk031zd'
+            });
+            connection.connect();
+            connection.query(`DELETE from author WHERE first_name = '${first}' AND last_name = '${last}'`,
+                function(error, results, fields) {
+                    if (error) throw error;
+                    console.log("deleted");
+                });
+            connection.query(`SELECT * from author`,
+                function(error, results, fields) {
+                    if (error) throw error;
+                    res.render('index.ejs', {
+                        title: 'Lab 10',
+                        authors: results
+                    });
+                });
+        }else {
+            console.log("nothing");
+        }
+    }
+</script>
