@@ -2,58 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db56e044-201d-4a36-ac1a-5e6267a31d8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/.idea/cst336.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/.idea/runConfigurations/bin_www.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/public/img/seal1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/public/img/seal2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/public/img/seal3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/LAB 8/views/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/Lab 8 Files/ajax/.idea/lab8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/Lab 8 Files/lab8/.idea/lab8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/examples/Lab 8 Files/post/.idea/post.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab10/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab10/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab10/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab10/public/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab10/views/edit.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab10/views/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab10/views/new.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/lab7/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/lab7/app.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/lab7/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/lab7/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/lab7/views/index.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/lab7/views/results.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab8/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab8/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab8/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab8/public/img/seal1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab8/public/img/seal2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab8/public/img/seal3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab8/views/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab9/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab9/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab9/view.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lab9/views/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/news.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/news/index.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/terms.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/terms.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lab10/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab10/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lab10/views/edit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab10/views/edit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lab10/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab10/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lab10/views/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab10/views/new.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/lab7" beforeDir="false" afterPath="$PROJECT_DIR$/public/lab7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +139,9 @@
       <workItem from="1573762251190" duration="1537000" />
       <workItem from="1573785808639" duration="1910000" />
       <workItem from="1574197798232" duration="2138000" />
-      <workItem from="1575406138316" duration="7346000" />
+      <workItem from="1575406138316" duration="7506000" />
+      <workItem from="1575576020000" duration="6188000" />
+      <workItem from="1575744539831" duration="2350000" />
     </task>
     <servers />
   </component>

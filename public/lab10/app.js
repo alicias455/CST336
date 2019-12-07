@@ -110,7 +110,7 @@ app.get("/edit", function(req, res){
         });
 });
 
-app.post("/edit", function(req, res){
+app.post("/edit", function(req, res, next){
 
     const connection = mysql.createConnection({
         host: 'er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
@@ -121,52 +121,106 @@ app.post("/edit", function(req, res){
 
     connection.connect();
 
-    console.log(req.body);
-    var body = req.body;
-
-    connection.query(`INSERT INTO author VALUES (${body.id}, '${body.FirstName}', '${body.LastName}', '${body.dob}', '${body.dod}', '${body.gender}')`,
-        function(error, results) {
-            if (error) throw error;
-
-            console.log(body);
-            res.render('edit.ejs', {
-                title: 'Lab 10',
-                unique_id: parseInt(body.id, 10) + 1
+    if(re.body.authorId && req.body.authorId.length > 0){
+        connection.query(
+            'UPDATE author SET authorId = ? WHERE authorId = ?', [req.body.authorId, req.body.authorId], // assuming POST
+            (error, results, fields) => {
+                if (error) throw error;
+                res.json({
+                    id: results.authorId
+                });
             });
-        });
+    }
+    else{
+        connection.query(
+            'INSERT INTO author(authorId) VALUES (?)', [req.body.authorId], // assuming POST
+            (error, results, fields) => {
+                if (error) throw error;
+                res.json({
+                    id: results.insertId
+                });
+            });
+    }
+
+    connection.end();
+
+    // console.log(req.body);
+    // var body = req.body;
+    //
+    // connection.query(`INSERT INTO author VALUES (${body.id}, '${body.FirstName}', '${body.LastName}', '${body.dob}', '${body.dod}', '${body.gender}')`,
+    //     function(error, results) {
+    //         if (error) throw error;
+    //
+    //         console.log(body);
+    //         res.render('edit.ejs', {
+    //             title: 'Lab 10',
+    //             unique_id: parseInt(body.id, 10) + 1
+    //         });
+    //     });
 });
 
 app.get("/delete", function(req, res){
-    const mysql = require('mysql');
-    function onDelete(first, last){
-        if (confirm("Are you sure you want to delete the author " + first + " " + last + "? This cannot be undone.")) {
-            const connection = mysql.createConnection({
-                host: 'er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-                user: 'jqu8aralz7x2d3f8',
-                password: 'j33452dd1h4o9zil',
-                database: 'upz1sirhhzk031zd'
-            });
-            connection.connect();
-            connection.query(`DELETE from author WHERE first_name = '${first}' AND last_name = '${last}'`,
-                function(error, results, fields) {
-                    if (error) throw error;
-                    console.log("deleted");
-                });
-            connection.query(`SELECT * from author`,
-                function(error, results, fields) {
-                    if (error) throw error;
-                    res.render('index.ejs', {
-                        title: 'Lab 10',
-                        authors: results
-                    });
-                });
-        }else {
-            console.log("nothing");
-        }
+    if (!req.query.id || req.query.id.length === 0) {
+        return next(new Error("There is a problem"));
     }
+    const connection = mysql.createConnection({
+        host: 'er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'jqu8aralz7x2d3f8',
+        password: 'j33452dd1h4o9zil',
+        database: 'upz1sirhhzk031zd'
+    });
+
+    connection.connect();
+
+    connection.query(`SELECT * from author`,
+        function(error, results, fields) {
+
+            //console.log('results', results[0]);
+
+            if (error) throw error;
+
+            res.render('delete.ejs', {
+                title: 'Lab 10 Delete Quote',
+                data: results[0]
+            });
+        });
+
+    connection.end();
+});
+
+app.delete('/delete', function(req, res, next) {
+
+    if (!req.body.authorId || req.body.authorId.length === 0) {
+        return next(new Error("There is a problem"));
+    }
+
+    const connection = mysql.createConnection({
+        host: 'er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'jqu8aralz7x2d3f8',
+        password: 'j33452dd1h4o9zil',
+        database: 'upz1sirhhzk031zd'
+    });
+
+    connection.connect();
+
+    connection.query(
+        'DELETE FROM author WHERE authorId = ?', [req.body.authorId], // assuming POST
+        (error, results, fields) => {
+            if (error) throw error;
+            res.json({
+                id: results.quoteId
+            });
+        });
+
+    connection.end();
+
 });
 
 // running server
-app.listen("3000", "0.0.0.0", function() {
-    console.log("Express Server is Running...")
+// app.listen("3000", "0.0.0.0", function() {
+//     console.log("Express Server is Running...")
+// });
+
+app.listen(process.env.PORT, process.env.IP, function() {
+    console.log("Running Express Server...");
 });
